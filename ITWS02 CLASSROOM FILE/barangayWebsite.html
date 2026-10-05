@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sumacab Este</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="barangayWebsite.css">
+    <link rel="icon" type="image/jpeg" href="sumacab.jpg">
+
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <div class="logo">
+                <img id="logo" src="sumacab.jpg"
+                alt="Barangay Logo">
+            </div>
+
+            <div class="barangay-title">
+
+                <h1>
+                    Barangay Sumacab Este
+                </h1>
+
+                <p>
+                    Cabanatuan, Nueva Ecija
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About Us</a>
+
+            <a href="#officials">Officials</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#concern">Concerns</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                BARANGAY SUMACAB
+            </p>
+
+            <h2>
+                Serving Our Community
+            </h2>
+
+            <p>
+                Welcome to Sumacab Este, Cabanatuan.
+                Learn more about our officials, services,
+                programs, and community.
+            </p>
+
+            <a href="#officials" class="hero-button">
+                Meet Our Officials
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                ABOUT SUMACAB
+            </p>
+
+            <h2>
+                Welcome to Sumacab Este
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p id="aboutText">
+
+                Sumacab is committed to providing
+                efficient public service, maintaining peace
+                and order, and supporting the needs of our
+                residents.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFICIALS ================= -->
+
+    <section class="officials-section" id="officials">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                BARANGAY SUMACAB
+            </p>
+
+            <h2>
+                 Barangay Officials
+            </h2>
+
+            <p>
+                Meet the dedicated people serving our community.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search official..."
+                onkeyup="searchOfficials()"
+            >
+
+        </div>
+
+
+        <!-- OFFICIAL CARDS -->
+
+        <div
+            id="officialsContainer"
+            class="officials-container"
+        >
+
+        </div>
+
+    </section>
+
+
+
+     <!-- ================= NATIONAL HOTLINES ================= -->
+
+<section class="hotline-card">
+
+    <div class="hotline-icon">
+        📞
+    </div>
+
+    <h2>National Hotlines</h2>
+
+    <p>
+        PNP, NDRRMC, MMDA, Red Cross and other national agencies
+    </p>
+
+    <button onclick="openHotlines()" class="view-hotlines">
+        View Contacts →
+    </button>
+
+</section>
+
+
+<!-- ================= HOTLINE TABLE ================= -->
+
+<section class="tble" id="tble">
+
+    <div class="tble-content">
+
+        <button class="close-hotline" onclick="closeHotlines()">
+            ×
+        </button>
+
+        <table>
+
+            <caption>National Emergency Hotlines</caption>
+
+            <thead>
+                <tr>
+                    <th>Office</th>
+                    <th>Hotline</th>
+                    <th>Text Hotline</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th>Philippine National Police</th>
+                    <td>117</td>
+                    <td>0917-847-5757</td>
+                </tr>
+
+                <tr>
+                    <th>NDRRMC</th>
+                    <td>8911-1406</td>
+                    <td>0918-912-2813</td>
+                </tr>
+
+                <tr>
+                    <th>MMDA</th>
+                    <td>136</td>
+                    <td>0939-922-7161</td>
+                </tr>
+
+                <tr>
+                    <th>Red Cross</th>
+                    <td>143</td>
+                    <td>(02) 8527-8385</td>
+                </tr>
+
+                <tr>
+                    <th>DSWD</th>
+                    <td colspan="2">
+                        0918-912-2813 | 0917-110-5686
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Contact Our Barangay
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <div class="contact-card">
+
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Sumacab Este Barangay Hall
+                </h3>
+
+                <p id="contactAddress">
+                    Barangay Sumacab,
+                    Cabanatuan, Nueva Ecija
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p id="contactPhone">
+                    0994-294-6442
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p id="contactEmail">
+                    barangaysumacabeste@gmail.com
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- ================= CONCERN FORM ================= -->
+
+    <section class="concern" id="concern">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WE ARE LISTENING
+            </p>
+
+            <h2>
+                Send a Concern
+            </h2>
+
+            <p>
+                Have a suggestion, inquiry, or community concern?
+                Let us know and we will get back to you.
+            </p>
+
+        </div>
+
+
+        <div class="concern-wrapper">
+
+            <div class="concern-notice">
+                <strong>Emergency?</strong>
+                Do not use this form. Call 117 or go to the
+                barangay hall right away.
+            </div>
+
+
+            <form id="concernForm" class="concern-form" novalidate>
+
+                <!-- Subject line for the email you receive (Formspree) -->
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New concern from Barangay Sumacab Este website"
+                >
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="concernName">
+                            Full Name <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="concernName"
+                            name="name"
+                            placeholder="Juan Dela Cruz"
+                            maxlength="100"
+                            autocomplete="name"
+                        >
+
+                        <p class="form-error"></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="concernLocation">
+                            Purok / Street
+                        </label>
+
+                        <input
+                            type="text"
+                            id="concernLocation"
+                            name="location"
+                            placeholder="Purok 1, Rizal Street"
+                            maxlength="100"
+                        >
+
+                        <p class="form-error"></p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="concernPhone">
+                            Contact Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="concernPhone"
+                            name="phone"
+                            placeholder="09XX-XXX-XXXX"
+                            maxlength="20"
+                            autocomplete="tel"
+                        >
+
+                        <p class="form-error"></p>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="concernEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="concernEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            maxlength="100"
+                            autocomplete="email"
+                        >
+
+                        <p class="form-error"></p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="concernCategory">
+                        Category <span class="required">*</span>
+                    </label>
+
+                    <select id="concernCategory" name="category">
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="Suggestion">
+                            Suggestion
+                        </option>
+
+                        <option value="Inquiry">
+                            Inquiry
+                        </option>
+
+                        <option value="Garbage / Sanitation">
+                            Garbage / Sanitation
+                        </option>
+
+                        <option value="Streetlights / Roads">
+                            Streetlights / Roads
+                        </option>
+
+                        <option value="Peace and Order (non-emergency)">
+                            Peace and Order (non-emergency)
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <p class="form-error"></p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="concernMessage">
+                        Your Message <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="concernMessage"
+                        name="message"
+                        placeholder="Please describe your concern and include the exact location if needed..."
+                        maxlength="1000"
+                    ></textarea>
+
+                    <p class="char-count" id="messageCount">
+                        0 / 1000
+                    </p>
+
+                    <p class="form-error"></p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label class="consent" for="concernConsent">
+
+                        <input
+                            type="checkbox"
+                            id="concernConsent"
+                            name="consent"
+                            value="agreed"
+                        >
+
+                        <span>
+                            I agree that the barangay may use the
+                            information I provided to respond to my
+                            concern (Data Privacy Act of 2012).
+                        </span>
+
+                    </label>
+
+                    <p class="form-error"></p>
+
+                </div>
+
+
+                <!-- Spam trap: real visitors never see or fill this -->
+                <div class="honeypot" aria-hidden="true">
+
+                    <label for="concernWebsite">Website</label>
+
+                    <input
+                        type="text"
+                        id="concernWebsite"
+                        name="website"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <div class="form-buttons">
+                <button
+                    type="reset"
+                    class="reset-concern">
+                Clear Form
+                </button>
+
+                <button
+                    type="submit"
+                    class="submit-concern"
+                    id="submitConcern">
+                    Submit Concern
+                </button>
+                </div>
+
+                <div
+                    id="formStatus"
+                    class="form-status"
+                    role="status"
+                ></div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-column">
+
+                <h2 id="footerBarangayName">
+                    Barangay Sumacab Este
+                </h2>
+
+                <p id="footerLocation">
+                    Cabanatuan, Nueva Ecija
+                </p>
+
+                <p>
+                    Serving our community with integrity,
+                    transparency, and commitment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#officials">
+                    Officials
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="#concern">
+                    Send a Concern
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p id="footerPhone">
+                    0994-294-6442
+                </p>
+
+                <p id="footerEmail">
+                    barangaysumacabeste@gmail.com
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            ©
+            <span id="year"></span>
+
+            <span id="copyrightName">
+                Barangay Sumacab Este
+            </span>
+
+            . All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- External JavaScript -->
+    <script src="barangayWebsite.js"></script>
+
+</body>
+
+</html>

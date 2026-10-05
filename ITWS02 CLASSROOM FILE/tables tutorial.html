@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="tables_tu.css">
+		<title>HTML Forms</title>
+	</head>
+	<body>
+		<form action="#" method="POST">
+			<label for="uname">Username:</label>
+			<input type="text" name="username" id="uname" value="mahalko_143" readonly disabled> <br> <br>
+
+			<label for="fname">First Name:</label>
+			<input type="text" name="fname" id="fname" size="50" placeholder="Enter your First Name" required autofocus> <br><br>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" name="lname" id="lname" maxlength="5" placeholder="Enter your Last Name"> <br><br>
+
+			<label for="address">Address:</label>
+			<textarea id="address" name="address" placeholder="Enter your complete address." rows="10" cols="50">
+				
+			</textarea>
+			<br><br>
+
+			<label for="pword">Password:</label>
+			<input type="password" name="password" id="pword"> <br><br>
+
+			<label for="eadd">Email Address:</label>
+			<input type="email" name="eadd" id="eadd"> <br><br>
+
+			<label for="fblink">Facebook Link:</label>
+			<input type="url" name="fblink" id="fblink"><br><br>
+
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" min="0" max="65" step="2"><br><br>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" id="dob"><br><br>
+
+			<label for="tob">Time of Birth:</label>
+			<input type="time" name="tob" id="tob"><br><br>
+
+			<label for="weight">Weight:</label>
+			<input type="range" name="weight" id="weight"><br><br>
+
+			<label for="pnum">Phone Number:</label>
+			<input type="tel" name="pnum" id="pnum" pattern="[0-9]{11}" title="11 digits phone number"><br><br>
+
+			<h3>Select Gender:</h3>
+			<input type="radio" name="gender" id="male" value="Male">
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="female" value="Female">
+			<label for="female">Female</label>
+			<br><br>
+
+			<label for="browser">Web Browsers:</label>
+			<input type="text" name="browser" id="browser" list="browserlist">
+			<datalist id="browserlist">
+				<option>Microsoft Edge</option>
+				<option>Mozilla Firefox</option>
+				<option>Google Chrome</option>
+			</datalist>
+			<br><br>
+
+			<fieldset>
+				<legend>School Information:</legend>
+				<label for="program">Select Program:</label>
+				<select id="program" name="program">
+					<option value="BSIT">BSIT</option>
+					<option value="BSDS">BSDS</option>
+					<option value="BSIS">BSIS</option>
+					<option selected disabled>Please Select One Program</option>
+				</select>
+				<br><br>
+
+				<h3>Subjects Enrolled:</h3>
+				<input type="checkbox" name="subject1" id="cc103" value="CC-103">
+				<label for="cc103">CC-103</label>
+				<br>
+
+				<input type="checkbox" name="subject2" id="itws02" value="IT-WS02">
+				<label for="itws02">IT-WS02</label>
+				<br>
+				<input type="checkbox" name="subject1" id="itpf01" value="IT-PF01">
+				<label for="itpf01">IT-PF01</label>
+				<br>
+
+				<label for="cor">Upload COR:</label>
+				<input type="file" name="cor" id="cor" multiple>
+			</fieldset>
+			<br><br>
+
+
+			<input type="submit" name="btnSubmit" value="Submit">
+			<input type="reset" name="btnReset" value="Clear">
+			<input type="button" name="btnPrint" value="Print">
+		</form>
+	</body>
+</html>

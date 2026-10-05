@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ninang Botique | Botique</title>
+        <link rel="stylesheet" href="registration.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <div class="form-container">
+            <form method="POST">
+                <label for="cname">Complete name:</label>
+                <input type="text" id="cname" name="cname" placeholder="Enter your Complete name" maxlength=50 required autofocus><br><br>
+
+                <label for="Bdate">Birthday:</label>
+                <input type="date" id="Bdate" name="Bdate" required ><br><br>
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email address" required ><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" minlength="8" maxlength="20" required><br><br>
+
+                <label for="address">Address:</label>
+                <textarea id="text" name="address" placeholder="Enter your complete address" rows="4" maxlength="100" required></textarea><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="gender">Male</label> 
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="gender">Female</label> 
+
+                <input type="radio" id="others" name="gender" value="Others">
+                <label for="gender">Others</label><br><br>
+
+                <div>
+                <button type="submit">Register</button>
+                </div>
+                
+                <div>
+                <button type="reset" value="Reset">Reset</button>
+                </div>
+                
+            </form>
+        </div> 
+    </body>
+</html>
