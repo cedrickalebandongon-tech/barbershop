@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackline Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">B<span>.</span> BLACKLINE</a>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#styles">Styles</a>
+            <a href="#booking" class="book-link">Book Now ↗</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-title">EST. 2018 • BARBERSHOP</p>
+            <h1>OWN YOUR<br><span>LOOK.</span></h1>
+            <p class="hero-text">More than a haircut. It's the confidence you carry out the door.</p>
+            <a href="#booking" class="main-btn">BOOK AN APPOINTMENT ↗</a>
+        </div>
+        <p class="hero-bottom">PRECISION. CHARACTER. CRAFT.</p>
+    </section>
+
+    <section class="about section" id="about">
+        <p class="section-title">01 / ABOUT US</p>
+        <div class="about-content">
+            <h2>GOOD CUTS.<br><span>NO SHORTCUTS.</span></h2>
+            <div>
+                <h3>A good haircut can change the way you feel.</h3>
+                <p>At Blackline Barbershop, we combine classic barbering with modern styles. Our goal is simple: give every customer a clean cut and a good experience.</p>
+                <a href="#services" class="under-link">CHECK OUR SERVICES ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section" id="services">
+        <p class="section-title">02 / OUR SERVICES</p>
+        <div class="section-heading">
+            <h2>THE DETAILS<br><span>MAKE THE CUT.</span></h2>
+            <p>Clean work and a fresh finish<br>every time.</p>
+        </div>
+
+        <div class="service">
+            <span>01</span>
+            <div><h3>CLASSIC HAIRCUT</h3><p>A clean haircut that suits your style.</p></div>
+            <strong>₱250</strong>
+        </div>
+        <div class="service">
+            <span>02</span>
+            <div><h3>FADE / TAPER</h3><p>A smooth fade with clean details.</p></div>
+            <strong>₱300</strong>
+        </div>
+        <div class="service">
+            <span>03</span>
+            <div><h3>BEARD TRIM</h3><p>Keep your beard neat and shaped.</p></div>
+            <strong>₱150</strong>
+        </div>
+        <div class="service">
+            <span>04</span>
+            <div><h3>HAIRCUT + BEARD</h3><p>A complete grooming service.</p></div>
+            <strong>₱400</strong>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div>
+            <p class="small-title">THE BLACKLINE STANDARD</p>
+            <h2>STAY SHARP.<br><span>STAY YOURSELF.</span></h2>
+            <p>Every detail matters. Every customer deserves a great cut.</p>
+        </div>
+    </section>
+
+    <section class="styles section" id="styles">
+        <p class="section-title">03 / CHOOSE YOUR STYLE</p>
+        <div class="section-heading">
+            <h2>PICK YOUR<br><span>NEXT CUT.</span></h2>
+            <p>Choose a style and we'll add it<br>to your booking.</p>
+        </div>
+        <div class="table-wrap">
+            <table class="style-table">
+                <thead>
+                    <tr><th>Photo</th><th>Style</th><th>Service</th><th>Choose</th></tr>
+                </thead>
+                <tbody>
+                    <tr data-style="Locs with Fade" data-service="Fade / Taper">
+                        <td><img src="images/locs-fade.jpg" alt="Locs styled on top with a skin fade" loading="lazy"></td>
+                        <td><h3>Locs with Fade</h3><p>Locs styled on top with a clean skin fade on the sides.</p></td>
+                        <td class="service-cell">Fade / Taper</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                    <tr data-style="Curly Mullet Fade" data-service="Fade / Taper">
+                        <td><img src="images/curly-mullet.jpg" alt="Curly mullet with a taper fade" loading="lazy"></td>
+                        <td><h3>Curly Mullet Fade</h3><p>Loose curls on top, longer at the back, with a smooth taper at the sides.</p></td>
+                        <td class="service-cell">Fade / Taper</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                    <tr data-style="Textured Quiff + Beard" data-service="Haircut + Beard">
+                        <td><img src="images/textured-quiff.jpg" alt="Textured quiff with taper and beard" loading="lazy"></td>
+                        <td><h3>Textured Quiff + Beard</h3><p>A swept-up textured top, a clean taper and a neatly shaped beard.</p></td>
+                        <td class="service-cell">Haircut + Beard</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                    <tr data-style="Long Buzz Skin Fade" data-service="Fade / Taper">
+                        <td><img src="images/long-buzz-fade.jpg" alt="Long buzz cut with skin fade and beard" loading="lazy"></td>
+                        <td><h3>Long Buzz Skin Fade</h3><p>A slightly longer buzz on top, blended into a high skin fade.</p></td>
+                        <td class="service-cell">Fade / Taper</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                    <tr data-style="Military Buzz" data-service="Fade / Taper">
+                        <td><img src="images/military-buzz.jpg" alt="Short military buzz cut with skin fade" loading="lazy"></td>
+                        <td><h3>Military Buzz</h3><p>A very short, even buzz with a sharp skin fade. Easy to maintain.</p></td>
+                        <td class="service-cell">Fade / Taper</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                    <tr data-style="Curly Top Taper" data-service="Fade / Taper">
+                        <td><img src="images/curly-taper.jpg" alt="Curly top with low taper fade" loading="lazy"></td>
+                        <td><h3>Curly Top Taper</h3><p>Soft, textured curls on top with a low taper on the sides.</p></td>
+                        <td class="service-cell">Fade / Taper</td>
+                        <td><button type="button" class="pick-btn">CHOOSE ↗</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="booking section" id="booking">
+        <p class="section-title">04 / BOOK AN APPOINTMENT</p>
+        <div class="booking-content">
+            <div>
+                <p class="small-title">YOUR CHAIR IS WAITING</p>
+                <h2>READY FOR<br><span>A FRESH CUT?</span></h2>
+                <p class="booking-text">Fill out the form with your preferred service and schedule. We will contact you to confirm your appointment.</p>
+                <p class="contact-info">LOCATION<br><strong>Mariveles, Bataan, Philippines</strong></p>
+                <p class="contact-info">OPENING HOURS<br><strong>Tuesday – Sunday, 10 AM – 8 PM</strong></p>
+            </div>
+
+            <form id="bookingForm">
+                <label for="name">YOUR NAME</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="styleChoice">HAIRCUT STYLE</label>
+                <select id="styleChoice">
+                    <option value="">No preference / not sure</option>
+                </select>
+
+                <label for="serviceChoice">CHOOSE A SERVICE</label>
+                <select id="serviceChoice" required>
+                    <option value="">Select a service</option>
+                    <option>Classic Haircut - ₱250</option>
+                    <option>Fade / Taper - ₱300</option>
+                    <option>Beard Trim - ₱150</option>
+                    <option>Haircut + Beard - ₱400</option>
+                </select>
+
+                <div class="date-time">
+                    <div>
+                        <label for="date">DATE</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div>
+                        <label for="time">TIME</label>
+                        <input type="time" id="time" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="main-btn">SUBMIT BOOKING ↗</button>
+                <p id="message"></p>
+                <small>This is a sample form. It does not send real bookings.</small>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">B<span>.</span> BLACKLINE</a>
+        <p>GOOD HAIR. GOOD ENERGY. GOOD COMPANY.</p>
+        <a href="#home">BACK TO TOP ↑</a>
+        <small>© 2026 BLACKLINE BARBERSHOP</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
